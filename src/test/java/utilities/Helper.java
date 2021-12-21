@@ -1,23 +1,22 @@
 package utilities;
 
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
-
 
 public class Helper {
-
-	// Method to take screenshot when the test cases fail
+ 	// Method to take screenshot when the test cases fail
 	public static void captureScreenshot(WebDriver driver , String screenshotname) 
 	{
-		Path dest = Paths.get("./Screenshots",screenshotname+".png"); 
+		Path dest = Paths.get("./Screenshots", screenshotname+".png");
 		try {
 			Files.createDirectories(dest.getParent());
 			FileOutputStream out = new FileOutputStream(dest.toString());
