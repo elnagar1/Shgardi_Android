@@ -6,12 +6,9 @@ import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-
-import java.util.List;
 import java.util.Random;
 
 public class PageBase {
-
 
     public static WebDriver driver;
 	public JavascriptExecutor jse ;

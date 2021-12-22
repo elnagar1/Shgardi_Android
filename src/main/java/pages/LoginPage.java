@@ -53,15 +53,15 @@ public class LoginPage extends PageBase
 			clickButton(skipButton);
 		}
 
-		 clickButton(btnChooseDev);
+		clickButton(btnChooseDev);
 		clickButton(chooseDev);
 		clickButton(confirmDev);
 		clickButton(countryCodeTxtBox);
 		clickButton(egypt);
+
 		setTextElementText(numberTxtBox, number);
+
 		clickButton(numberContinue);
-
-
 		setTextElementText(passwordTxtBox, password);
 		clickButton(loginBtn);
 	}
